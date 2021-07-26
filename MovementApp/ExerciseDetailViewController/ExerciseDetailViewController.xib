@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExerciseDetailViewController" customModule="MovementApp" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="kGJ-oi-lWF" id="XhH-5T-sGc"/>
+                <outlet property="exerciseImageView" destination="Aqj-qc-yBc" id="ycz-wz-9hh"/>
+                <outlet property="isFavouiriteButton" destination="RZn-Gf-m58" id="9Ua-la-HMZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aqj-qc-yBc">
+                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZn-Gf-m58">
+                    <rect key="frame" x="215" y="698" width="130" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="YqX-mh-uIc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" title="  Loading....">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="markFavouriteButtonTap:" destination="-1" eventType="touchUpInside" id="vKB-fH-jzZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGJ-oi-lWF">
+                    <rect key="frame" x="154" y="74" width="191" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="CoE-Gj-MmO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="  Cancel Training">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelTrainingButtonTap:" destination="-1" eventType="touchUpInside" id="0Ek-x5-zw9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Aqj-qc-yBc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="42K-Ct-3ch"/>
+                <constraint firstItem="Aqj-qc-yBc" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="82k-d5-IWw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RZn-Gf-m58" secondAttribute="trailing" constant="30" id="9I3-N0-k7I"/>
+                <constraint firstItem="Aqj-qc-yBc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Swb-h2-JNX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RZn-Gf-m58" secondAttribute="bottom" constant="30" id="Zuo-wf-TlQ"/>
+                <constraint firstItem="Aqj-qc-yBc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hd5-1R-c1D"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kGJ-oi-lWF" secondAttribute="trailing" constant="30" id="lIi-1o-pnf"/>
+                <constraint firstItem="kGJ-oi-lWF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="sRo-fA-cAz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="47.826086956521742" y="43.526785714285715"/>
+        </view>
+    </objects>
+</document>
